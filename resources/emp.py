@@ -1,5 +1,6 @@
-from flask_restful import Resource
+from flask_restful import Resource,reqparse
 from db import query
+
 class Emp(Resource):
     def get(self):
         parser=reqparse.RequestParser()
